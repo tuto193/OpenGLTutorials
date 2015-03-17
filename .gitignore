@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ignore all files
 *.txt
 *.png
@@ -5,25 +6,46 @@
 *.cmake
 *cmake
 
+=======
+>>>>>>> 82c0999e8f0d5dd42701870cfeb183e3844d9fcb
 # Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
+<<<<<<< HEAD
 # Precompiled Headers
 *.gch
 *.pch
+=======
+
+# Precompiled Headers
+*.gch
+*.pch
+
+>>>>>>> 82c0999e8f0d5dd42701870cfeb183e3844d9fcb
 # Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
+<<<<<<< HEAD
 # Fortran module files
 *.mod
+=======
+
+# Fortran module files
+*.mod
+
+>>>>>>> 82c0999e8f0d5dd42701870cfeb183e3844d9fcb
 # Compiled Static libraries
 *.lai
 *.la
 *.a
 *.lib
+<<<<<<< HEAD
+=======
+
+>>>>>>> 82c0999e8f0d5dd42701870cfeb183e3844d9fcb
 # Executables
 *.exe
 *.out
