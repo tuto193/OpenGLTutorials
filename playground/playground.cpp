@@ -8,8 +8,12 @@ GLFWwindow* window;
 
 #include <glm/glm.hpp>
 using namespace glm;
+#include <common/shader.hpp>
+// Crwate and compile our GLSL program form the shaders
+GLuint programID = LoadShaders( "SimpleVertexShader.vertexshader", "SimpleFragmentShader.fragmentshader" );
 
 int main( void ) {
+	glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
 	// Initialise GLFW
 	if( !glfwInit() ) {
 		fprintf( stderr, "Failed to initialize GLFW\n" );
@@ -73,6 +77,8 @@ int main( void ) {
 		 * Normalized?
 		 * Stride.
 		 * Array buffer offset */
+		// User our shader
+		glUseProgram( programID );
 		/*** Draw the triangle ***/
         glDrawArrays( GL_TRIANGLES, 0, 3 ); //Starting from vertex 0; 3 Vertices total -> 1 triangle
 		
